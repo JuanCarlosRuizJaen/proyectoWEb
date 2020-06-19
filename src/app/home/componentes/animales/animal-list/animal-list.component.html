@@ -1,0 +1,22 @@
+<div class="card">
+    <div class="card-body">
+        <h5 class="text-center"> Registros agregados </h5>
+        <table class="table table-sm table-hover">
+            <tbody>
+                <tr *ngFor="let animal of animalList">
+                    <td>{{animal.arete}}</td>
+                    <td>{{animal.nombre}}</td>
+                    <td>{{animal.raza}}</td>
+                    <td>{{animal.sexo}}</td>
+                    <td>{{animal.edad}}</td>
+                    <td>
+                        <a class="btn btn-secondary text-white" (click)="onEdit(animal)">Editar
+                        </a>
+                        <a class="btn btn-danger text-white" (click)="onDelete(animal.$key)">Eliminar
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

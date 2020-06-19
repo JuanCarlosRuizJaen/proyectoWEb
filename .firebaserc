@@ -1,0 +1,21 @@
+{
+  "targets": {
+    "login-c9cc9": {
+      "hosting": {
+        "proyectoWEb": [
+          "login-c9cc9"
+        ]
+      }
+    },
+    "proyecweb-33575": {
+      "hosting": {
+        "proyectoWEb": [
+          "proyecweb-33575"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "proyecweb-33575"
+  }
+}

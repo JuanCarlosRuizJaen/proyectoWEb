@@ -1,0 +1,36 @@
+<div class="card">
+    <div class="card-body">
+        <form #animalForm="ngForm" (ngSubmit)="onSubmit(animalForm)">
+            <input type="hidden" name="$key" #$key="ngModel" [(ngModel)]="animalService.selectedAnimal.$key">
+
+            <div class="form-group">
+                <input type="text" class="form-control" name="arete" #arete="ngModel" [(ngModel)]="animalService.selectedAnimal.arete" placeholder="N° de Arete del animal">
+            </div>
+
+            <div class="form-group">
+                <input type="text" class="form-control" name="nombre" #nombre="ngModel" [(ngModel)]="animalService.selectedAnimal.nombre" placeholder="Nombre del animal">
+            </div>
+
+            <div class="form-group">
+                <input type="text" class="form-control" name="raza" #raza="ngModel" [(ngModel)]="animalService.selectedAnimal.raza" placeholder="Raza del animal">
+            </div>
+
+            <div class="form-group">
+                <input type="text" class="form-control" name="sexo" #sexo="ngModel" [(ngModel)]="animalService.selectedAnimal.sexo" placeholder="Sexo del animal">
+            </div>
+
+            <div class="form-group">
+                <input type="text" class="form-control" name="edad" #edad="ngModel" [(ngModel)]="animalService.selectedAnimal.edad" placeholder="Edad del animal">
+            </div>
+
+            <div class="form-group">
+                <button class="btn btn-primary" type="submit">Agregar animal
+
+            </button>
+                <button class="btn btn-secondary" type="reset" (click)="resetForm(animalForm)">Resetear
+            </button>
+            </div>
+
+        </form>
+    </div>
+</div>
